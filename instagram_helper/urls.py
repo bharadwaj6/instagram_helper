@@ -1,8 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
-from settings import INSTAGRAM_CLIENT_ID, INSTAGRAM_CLIENT_SECRET
-
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'instagram_helper.views.home', name='home'),
