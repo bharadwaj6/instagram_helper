@@ -5,5 +5,5 @@ from django.shortcuts import render
 def index(request):
 	return render(request, 'best_time_teller/index.html', {})
 
-def home(request, code):
-	return HttpResponse(str(code))
+def home(request):
+	return HttpResponse(str(request.GET))
