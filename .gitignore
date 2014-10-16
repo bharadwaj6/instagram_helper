@@ -2,4 +2,7 @@ venv
 *.pyc
 staticfiles
 *.log
+
+# specific files
 instagram_helper/settings.py
+db.sqlite3

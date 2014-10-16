@@ -6,5 +6,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'instagram_helper.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^$', 'instagram_helper.views.home', name='home'),
+    url(r'home/$', 'instagram_helper.views.home', name='home'),
+
     url(r'^admin/', include(admin.site.urls)),
 )
