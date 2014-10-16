@@ -2,3 +2,4 @@ venv
 *.pyc
 staticfiles
 *.log
+instagram_helper/settings.py
