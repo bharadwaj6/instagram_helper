@@ -1,13 +1,15 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
+from settings import INSTAGRAM_CLIENT_ID, INSTAGRAM_CLIENT_SECRET
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'instagram_helper.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^$', 'instagram_helper.views.home', name='home'),
-    url(r'home/$', 'instagram_helper.views.home', name='home'),
+    url(r'^$', 'best_time_teller.views.index', name='index'),
+    url(r'home\?code=(?P<code>)$', 'best_time_teller.views.home', name='home'),
 
     url(r'^admin/', include(admin.site.urls)),
 )
